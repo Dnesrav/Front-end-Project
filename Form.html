@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="Form.css">
+	<script src="Form.js"></script>
+</head>
+
+<font color="red"><h1> </h1></font>
+<br>
+<body >
+	<form action="#" method="get" autocomplete="on">
+			<fieldset>
+			<legend>Fill the Survey:</legend>
+			
+			<label for="Uname">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+				<input type="text" id="Uname" name="Uname" placeholder="Enter Your Name" required placeholder="Enter You Name" required oninput="this.value = this.value.replace(/[^a-z,^A-Z]/g, ' ').replace(/(\..*?)\..*/g, '$1');" ><br><br>
+			<label for="Phone">Mobile:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" id="Phone" name="Phone" placeholder="Enter Your Mobile number" required  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10"><br><br>
+			<label for="Date">Date of Birth:&nbsp;&nbsp;&nbsp;</label>
+				<input type="date" id="Date" name="Date" max="2005-06-01"><br><br>
+			<label for="Pass">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" id="Pass" name="Pass" placeholder="Enter Your Email" required size="50" oninput="this.value = this.value.replace(/[^a-z,^A-Z,^0-9,^@.]/g,'').replace(/(\..*,?)\..*/g, '$1');"><br><br>
+				<p>What is your area of interest?</p>
+				<input type="radio" id="html" name="fav_language" value="HTML" width="20px">
+			<label for="html">Front-End</label><br>
+				<input type="radio" id="css" name="fav_language" value="CSS" >
+			<label for="css">Full-Stack</label><br>
+				<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			<label for="javascript">Back-end</label>	
+				<br><br>
+			<label for="User">Which Time slot in the list you feel comfortable ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<select name="User" id="User" required>
+					<option value="s">---select---</option>
+					<option value="Ad">9:00AM - 01:30PM</option>
+					<option value="Cust">02:00PM - 05:30PM</option> 
+					<option value="Cust">06:00PM - 09:30PM</option> 
+				</select><br><br>
+			<p>Please rate the quality of this Course.</p>
+				<input type="radio" id="vpoor" name="service" value="vpoor" width="20px">
+			<label for="html">Very Poor</label>
+				<input type="radio" id="poor" name="service" value="poor" >
+			<label for="poor">Poor</label>
+				<input type="radio" id="satisfy" name="service" value="satisfy">
+			<label for="satisfy">Satisfy</label>
+				<input type="radio" id="good" name="service" value="good">
+			<label for="good">Good</label>
+				<input type="radio" id="vgood" name="service" value="vgood">
+			<label for="vgood">excellent</label>			
+				<br><br>
+			<p> What are the services opted for ?&nbsp;&nbsp;&nbsp;</p>
+			     <input type="checkbox" id="option1" name="op1" value="option1">
+			<label for="option1">Training </label><br>
+				 <input type="checkbox" id="option2" name="op2" value="option2">
+			<label for="option2">DPM   </label><br>
+				 <input type="checkbox" id="option3" name="op3" value="option3">
+			<label for="option3">Placement   </label><br><br>
+			<p> How likely is that you would recommend Edubridge to you friend / colleague ?&nbsp;&nbsp;&nbsp;</p>
+			<input type="radio" id="opt1" name="r1" value="opt1">
+			<label for="opt1">YES </label><br>
+			<input type="radio" id="opt2" name="r1" value="opt2">
+				<label for="opt2">NO   </label><br>
+			<input type="radio" id="opt3" name="r1" value="opt3">
+				<label for="opt3">May be   </label><br><br>
+			<p> Do you have anything you would like to share with us?:&nbsp;&nbsp;&nbsp;</p>
+			<textarea PLACEHOLDER="Enter answer here..."></textarea><br><br>
+			<label for="file">Upload Photo:&nbsp;&nbsp;&nbsp;</label>
+				<input type="file" id="file" name="filename"><br><br>
+			<button class="button submit"   onclick="filled()">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+			<button class="button" type="Reset">Reset</button>
+ 		</fieldset>
+	</form><br>
+	
+</body>
+ </html>

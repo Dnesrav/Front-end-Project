@@ -1,0 +1,33 @@
+fieldset{
+background-color:white;
+border:1px solid white;
+margin-left: 280px;
+margin-right: 280px;
+border-radius:12px;
+padding-left: 100px;
+padding-top: 100px;
+}
+
+body{
+background-color:#ffdead;
+}
+.button {
+  background-color: blue;	
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius:5px;
+}
+.submit{
+   margin-left: 180px;
+}
+
+textarea {
+height: 60px;
+width: 350px;
+}
+
+
+
+
+	
