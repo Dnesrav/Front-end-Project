@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="Project.css">
+		<script>
+			function getInput(input) 
+			{
+				document.getElementById("calc").value += input;
+			};
+			function showOutput() 
+			{
+			  var stored=document.getElementById('calc').value;
+			  document.getElementById("calc").value = eval(stored);
+			};
+			function alter() 
+			{
+			  var s= document.getElementById("calc").value =" ";
+			};
+			
+			function zero() 
+			{
+			  document.getElementById("calc").value =0;
+			};
+			
+			var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
+			document.onclick = function() {
+			  audio.play();
+			}
+		</script>	
+		<style>
+			#App{
+			    max-width: 200px;
+				margin: 10vh auto 0 auto;
+				box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+				border:100px;
+				background-color:white;
+			}
+
+			#centr {
+				text-align: center;
+			}
+
+			.but:hover {
+			  background-color: yellow;
+			}
+
+			.but{
+			  background: #cad2c5;
+			  margin-top:5px;
+			  width:30px;
+			  height:25px;
+			  cursor: pointer;
+			  align-items: center;
+			}
+
+			#calc {
+			  width:130px;
+			  height:26px;
+			}
+
+			h3{
+				text-align: center;
+			}
+			body{
+			background-color:#ffdead;
+			}
+		</style>
+	</head>
+	<body> 
+		<div id="App" >
+		<br>
+		<h3>DK's Calculator</h3>
+			<div id="centr">
+				<input id = "calc"  readonly></input><br>
+				<Button class="but" onClick ="zero()">C</Button>
+				<Button class="but" onClick ="alter()">CE</Button>
+				<Button class="but" onClick ="getInput('/')">/</Button>
+				<Button class="but" onClick ="getInput('*')">*</Button><br>
+				<Button class="but" onClick ="getInput('7')">7</Button>
+				<Button class="but" onClick ="getInput('8')">8</Button>
+				<Button class="but" onClick ="getInput('9')">9</Button>
+				<Button class="but" onClick ="getInput('-')">-</Button><br>
+				<Button class="but" onClick ="getInput('4')">4</Button>
+				<Button class="but" onClick ="getInput('5')">5</Button>
+				<Button class="but" onClick ="getInput('6')">6</Button>
+				<Button class="but" onClick ="getInput('+')">+</Button><br>
+				<Button class="but" onClick ="getInput('1')">1</Button>
+				<Button class="but" onClick ="getInput('2')">2</Button>
+				<Button class="but" onClick ="getInput('3')">3</Button>
+				<Button class="but" onClick ="getInput('.')">.</Button><br>
+				<Button class="but" onClick ="getInput('(')">(</Button>
+				<Button class="but" onClick ="getInput('0')">0</Button>
+				<Button class="but" onClick ="getInput(')')">)</Button>
+				<Button class="but" onClick ="showOutput()">=</Button><br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>
+
