@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="Project.css">
+		<script src="Project.js"></script>	
+	</head>
+	<body> 
+		<div id="App" >
+		<br>
+		<h3>DK's Calculator</h3>
+			<div id="centr">
+				<input id = "calc"  readonly></input><br>
+				<Button class="but" onClick ="zero()">C</Button>
+				<Button class="but" onClick ="alter()">CE</Button>
+				<Button class="but" onClick ="getInput('/')">/</Button>
+				<Button class="but" onClick ="getInput('*')">*</Button><br>
+				<Button class="but" onClick ="getInput('7')">7</Button>
+				<Button class="but" onClick ="getInput('8')">8</Button>
+				<Button class="but" onClick ="getInput('9')">9</Button>
+				<Button class="but" onClick ="getInput('-')">-</Button><br>
+				<Button class="but" onClick ="getInput('4')">4</Button>
+				<Button class="but" onClick ="getInput('5')">5</Button>
+				<Button class="but" onClick ="getInput('6')">6</Button>
+				<Button class="but" onClick ="getInput('+')">+</Button><br>
+				<Button class="but" onClick ="getInput('1')">1</Button>
+				<Button class="but" onClick ="getInput('2')">2</Button>
+				<Button class="but" onClick ="getInput('3')">3</Button>
+				<Button class="but" onClick ="getInput('.')">.</Button><br>
+				<Button class="but" onClick ="getInput('(')">(</Button>
+				<Button class="but" onClick ="getInput('0')">0</Button>
+				<Button class="but" onClick ="getInput(')')">)</Button>
+				<Button class="but" onClick ="showOutput()">=</Button><br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>
+
